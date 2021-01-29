@@ -1,0 +1,18 @@
+<form>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-4">
+            <div class="ui-inputgroup">
+                <input type="text" [(ngModel)]="usuario.nome" name="nome" pInputText placeholder="Nome">         
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <div class="ui-inputgroup">
+                <input type="email" [(ngModel)]="usuario.email" name="email" pInputText placeholder="E-mail">         
+            </div>
+        </div>
+    </div>
+    <div>
+        <button pButton (click)="salvar()" label="Salvar"></button>
+    </div>
+    {{usuario | json}}
+</form>
